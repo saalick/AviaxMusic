@@ -20,18 +20,15 @@ def private_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_3"],
-                url=f"https://t.me/{app.username}?startgroup=true",
+                text="🔎 How to use? Command Menu",
+                callback_data="settings_back_helper",
             )
         ],
-        [InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper")],
         [
-            InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
+            InlineKeyboardButton(text="📨Channel", url=config.SUPPORT_GROUP),
+            InlineKeyboardButton(text="📨Support", url=config.SUPPORT_GROUP),
         ],
-        [
-            InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text=_["S_B_7"], url=config.UPSTREAM_REPO),
-        ],
+        [InlineKeyboardButton(text="➕ Add Me To Your Group ➕", url=f"https://t.me/{app.username}?startgroup=true",)],
+        [InlineKeyboardButton(text="👤 MIW AI Health Coach", url="https://app.miwonsol.com",)],
     ]
     return buttons
