@@ -28,7 +28,17 @@ def private_panel(_):
             InlineKeyboardButton(text="📨Channel", url=config.SUPPORT_GROUP),
             InlineKeyboardButton(text="📨Support", url=config.SUPPORT_GROUP),
         ],
-        [InlineKeyboardButton(text="➕ Add Me To Your Group ➕", url=f"https://t.me/{app.username}?startgroup=true",)],
-        [InlineKeyboardButton(text="👤 MIW AI Health Coach", url="https://app.miwonsol.com",)],
+        [
+            InlineKeyboardButton(
+                text="➕ Add Me To Your Group ➕",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
+        ],
+        [
+            InlineKeyboardButton(
+                text="👤 MIW AI Health Coach",
+                url="https://app.miwonsol.com",
+            )
+        ],
     ]
     return buttons
